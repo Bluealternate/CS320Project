@@ -126,17 +126,17 @@
         </thead>
         <tbody>
         <tr>
-          <td class="selectable" onclick="storeBall()">
+          <td id="soccer_ball" class="selectable" onclick="storeBall(this.id)">
             <center>
               <img src="../Images/soccer_ball.png" height="125px">
             </center>
           </td>
-          <td class="selectable" onclick="storeBall()">
+          <td id="basketball" class="selectable" onclick="storeBall(this.id)">
             <center>
               <img src="../Images/basketball.jfif" height="125px">
             </center>
           </td>
-          <td class="selectable" onclick="storeBall()">
+          <td id ="tennis_ball" class="selectable" onclick="storeBall(this.id)">
             <center>
               <img src="../Images/tennis_ball.png" height="125px">
             </center>
@@ -156,12 +156,12 @@
         </thead>
         <tbody>
         <tr>
-          <td class="selectable" onclick="storeHome()">
+          <td id="dog_house" class="selectable" onclick="storeHome(this.id)">
             <center>
               <img src="../Images/dog_house.jfif" height="125px">
             </center>
           </td>
-          <td class="selectable" onclick="storeHome()">
+          <td id="barn" class="selectable" onclick="storeHome(this.id)">
             <center>
               <img src="../Images/barn.png" height="125px">
             </center>
@@ -169,12 +169,12 @@
         </tr>
 
         <tr>
-          <td class="selectable" onclick="storeHome()">
+          <td id="house" class="selectable" onclick="storeHome(this.id)">
             <center>
               <img src="../Images/house.png" height="125px">
             </center>
           </td>
-          <td class="selectable" onclick="storeHome()">
+          <td id="treehouse" class="selectable" onclick="storeHome(this.id)">
             <center>
               <img src="../Images/treehouse.jpg" height="125px">
             </center>
@@ -216,7 +216,7 @@
 
   //this code should construct an animal with the desired attributes the user has requested
   function createAnimal(){
-    name = document.getElementById("animalNameTextBox").value);
+    name = document.getElementById("animalNameTextBox").value;
     
   }
 
@@ -232,13 +232,15 @@
   }
 
   //this function should store the type of ball the user would like for their pet
-  function storeBall(){
-
+  function storeBall(id){
+    ball = document.getElementById(id).id;
+    //console.log(ball);
   }
 
   //this function should store the type of house the user would like for their pet
-  function storeHouse(){
-
+  function storeHome(id){
+    house = document.getElementById(id).id;
+    //console.log(house);
   }
 
 </script>
