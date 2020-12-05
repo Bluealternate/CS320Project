@@ -126,17 +126,17 @@
         </thead>
         <tbody>
         <tr>
-          <td class="selectable">
+          <td class="selectable" onclick="storeBall()">
             <center>
               <img src="../Images/soccer_ball.png" height="125px">
             </center>
           </td>
-          <td class="selectable">
+          <td class="selectable" onclick="storeBall()">
             <center>
               <img src="../Images/basketball.jfif" height="125px">
             </center>
           </td>
-          <td class="selectable">
+          <td class="selectable" onclick="storeBall()">
             <center>
               <img src="../Images/tennis_ball.png" height="125px">
             </center>
@@ -156,12 +156,12 @@
         </thead>
         <tbody>
         <tr>
-          <td class="selectable">
+          <td class="selectable" onclick="storeHome()">
             <center>
               <img src="../Images/dog_house.jfif" height="125px">
             </center>
           </td>
-          <td class="selectable">
+          <td class="selectable" onclick="storeHome()">
             <center>
               <img src="../Images/barn.png" height="125px">
             </center>
@@ -169,12 +169,12 @@
         </tr>
 
         <tr>
-          <td class="selectable">
+          <td class="selectable" onclick="storeHome()">
             <center>
               <img src="../Images/house.png" height="125px">
             </center>
           </td>
-          <td class="selectable">
+          <td class="selectable" onclick="storeHome()">
             <center>
               <img src="../Images/treehouse.jpg" height="125px">
             </center>
@@ -190,14 +190,14 @@
         </h2>
 
         <div class="ui input">
-          <input type="text" placeholder="Name">
+          <input id="animalNameTextBox" type="text" placeholder="Name">
         </div>
 
-        <button class="ui button">
+        <button class="ui button" onclick="randomNameGenerator()">
           Randomize
         </button>
-        
-        <button class="ui button">
+
+        <button class="ui button" onclick="createAnimal()">
           Create Animal
         </button>
       </center>
@@ -208,3 +208,37 @@
 
 </body>
 
+<script>
+  var animal = "dog";
+  var name = "Fido";
+  var ball;
+  var house;
+
+  //this code should construct an animal with the desired attributes the user has requested
+  function createAnimal(){
+    name = document.getElementById("animalNameTextBox").value);
+    
+  }
+
+  //this function should randomly set the name field for the animal to be created
+  function randomNameGenerator(){
+    //get a random number
+
+    //use modulo operator to fit the random number to the index range of our random list of names
+
+    //use number to fetch a name from the list
+
+    //set the name field for the animal to be created to the fetched name
+  }
+
+  //this function should store the type of ball the user would like for their pet
+  function storeBall(){
+
+  }
+
+  //this function should store the type of house the user would like for their pet
+  function storeHouse(){
+
+  }
+
+</script>
