@@ -8,6 +8,9 @@
   <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Including your javascript files -->
+  <script type="text/javascript" src="../Javascript/FeedAnimalJavascript.js"></script>
 </head>
 
 <body>
@@ -19,9 +22,10 @@
   <a class="item active">Feed Animals</a>
 </div>
 
-<p>
-  Feed Animal Page.
-</p>
+<button class="ui button" id="FeedButton" onclick="feedAnimal()">Feed Animal</button>
+
+<img class="ui large image" src="../Images/FeedAnimalsImages/Rabbit1.png" id="AnimalPicture">
+
 
 </body>
 
