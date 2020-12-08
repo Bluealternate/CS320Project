@@ -1,10 +1,10 @@
 #animal {
   height: auto;
-  width: 200px;
+  width: 400px;
 }
 
 #experienceBar {
-  width: 50%;
+  width: 100%;
   background-color: grey;
 }
 
