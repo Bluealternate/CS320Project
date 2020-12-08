@@ -7,7 +7,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../CSSFiles/PlayWithAnimalStyles.css">
+  <script type="text/javascript" src="../Javascript/PlayWithAnimalscript.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,19 @@
   Play With Animal Page.
 </p>
 
+<p>Drag the ball onto the animal to play with animal. Keep playing to level up animal!</p>
+
+<img class="animal" src="../Images/dog.gif" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+
+<img id="toy" src="../Images/soccer_ball.png" style="position:absolute; right: 700px; top: 150px" draggable="true" ondragstart="dragThis(event)" width="200" height="200">
 </body>
+
+<div class="bottom-left">Bessie</div>
+
+<div id="experienceBar">
+  <div id="level"></div>
+  <div id ="num"></div>
+</div>
 
 
 
