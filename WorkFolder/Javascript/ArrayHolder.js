@@ -13,3 +13,7 @@ const arrayForUser1 = [];
 arrayForUser1.push(Cat1);
 arrayForUser1.push(Dog1);
 
+function ListAnimalForFeedAnimal() { // Normally use for loop and clean the code up more.
+  document.getElementById('1').innerHTML = arrayForUser1[0].name;
+  document.getElementById('2').innerHTML = arrayForUser1[1].name;
+}
