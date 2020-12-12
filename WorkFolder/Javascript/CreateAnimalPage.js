@@ -25,6 +25,8 @@ function randomNameGenerator(){
 function storeBall(id){
   ball = document.getElementById(id).id;
   //console.log(ball);
+
+  document.getElementById(id).style.border = ;
 }
 
 //this function should store the type of house the user would like for their pet
