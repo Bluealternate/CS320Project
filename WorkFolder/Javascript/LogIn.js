@@ -9,6 +9,7 @@ function checkCredentials() {
     document.cookie = '1';
     window.location.href = 'MainPage.html';
   } else if (username === 'Canterlot' && password === 'Aurthur') {
+    document.cookie = '2';
     window.location.href = 'MainPage.html';
   } else {
     window.location.href = 'LogIn.html';
