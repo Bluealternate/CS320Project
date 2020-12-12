@@ -31,3 +31,8 @@ function storeHome(id){
   house = document.getElementById(id).id;
   //console.log(house);
 }
+
+function storeAnimal(id){
+  animal = id;
+  //console.log(animal);
+}
