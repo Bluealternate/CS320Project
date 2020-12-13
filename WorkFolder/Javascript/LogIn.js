@@ -5,10 +5,10 @@
 function checkCredentials() {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
-  if (username === 'Edward' && password === 'theSecond') {
+  if (username === 'a' && password === 'a') {
     document.cookie = '1';
     window.location.href = 'MainPage.html';
-  } else if (username === 'Canterlot' && password === 'Aurthur') {
+  } else if (username === 'b' && password === 'b') {
     document.cookie = '2';
     window.location.href = 'MainPage.html';
   } else {

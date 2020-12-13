@@ -1,10 +1,14 @@
 // Javascript file to contain our files
 // https://buzzcoder.gitbooks.io/codecraft-javascript/content/object/iterate-over-a-dictionary.html
+// Feed Animal helper variables
+var feedAnimalHelperName = '';
 class Animal {
   constructor(name, type, description) {
     this.name = name;
     this.type = type;
     this.description = description;
+    this.feedCount = 0;
+    this.rank = 0;
   }
 }
 
@@ -44,5 +48,64 @@ function goToLink(idValue) {
 }
 
 function showAnimal() {
-  document.getElementById('AnimalPicture').src = '../Images/FeedAnimalsImages/Cat1.png';
+  var cookieSections = document.cookie.split(' ');
+  feedAnimalHelperName = cookieSections[1];
+  if (cookieSections[0] === '1') {
+    const animalType = arrayForUser1[feedAnimalHelperName].type;
+    const currentFeedCount = arrayForUser1[feedAnimalHelperName].feedCount;
+    if (currentFeedCount < 3) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
+    } else if (currentFeedCount >= 3 && currentFeedCount < 6) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
+    } else if (currentFeedCount >= 6 && currentFeedCount < 9) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
+    } else if (currentFeedCount >= 9) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
+    }
+  } else if (cookieSections[0] === '2') {
+    const animalType = arrayForUser2[feedAnimalHelperName].type;
+    const currentFeedCount = arrayForUser2[feedAnimalHelperName].feedCount;
+    if (currentFeedCount < 3) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
+    } else if (currentFeedCount >= 3 && currentFeedCount < 6) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
+    } else if (currentFeedCount >= 6 && currentFeedCount < 9) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
+    } else if (currentFeedCount >= 9) {
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
+    }
+  }
+  document.cookie = cookieSections[0];
+}
+
+function feedAnimalHelper() {
+  if (document.cookie === '1') {
+    arrayForUser1[feedAnimalHelperName].feedCount += 1;
+    const feeds = arrayForUser1[feedAnimalHelperName].feedCount;
+    const animalType = arrayForUser1[feedAnimalHelperName].type;
+    if (feeds === 3) {
+      arrayForUser1[feedAnimalHelperName].rank = 1;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
+    } else if (feeds === 6) {
+      arrayForUser1[feedAnimalHelperName].rank = 2;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
+    } else if (feeds === 9) {
+      arrayForUser1[feedAnimalHelperName].rank = 3;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
+    }
+  } else if (document.cookie === '2') {
+    arrayForUser2[feedAnimalHelperName].feedCount += 1;
+    const feeds = arrayForUser2[feedAnimalHelperName].feedCount;
+    const animalType = arrayForUser2[feedAnimalHelperName].type;
+    if (feeds === 3) {
+      arrayForUser2[feedAnimalHelperName].rank = 1;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
+    } else if (feeds === 6) {
+      arrayForUser2[feedAnimalHelperName].rank = 2;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
+    } else if (feeds === 9) {
+      arrayForUser2[feedAnimalHelperName].rank = 3;
+      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
+    }
+  }
 }
