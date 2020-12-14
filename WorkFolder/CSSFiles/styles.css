@@ -48,3 +48,34 @@ p {
   margin-right: 150px;
   border: 4mm ridge rgba(170, 50, 220, .6);
 }
+
+.todo {
+  font-size: 1.25em;
+  border: none;
+  margin-right: 0px;
+}
+
+
+.item{
+  box-shadow: 2px 2px 4px #000000;
+}
+.item:hover {
+  -webkit-text-fill-color: #4CAF50;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.faceButtons a{
+  color: black;
+  float: left;
+  display: inline;
+  margin-right: 18px;
+  background-image: url("../Images/dog_face.png");
+  width: 225px;
+  height: 225px;
+  text-align: left;
+}
+
+.faceButtons a:hover{
+  -webkit-text-fill-color: #4CAF50;
+  box-shadow: 2px 2px 4px #000000;
+}
