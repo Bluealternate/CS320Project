@@ -24,3 +24,27 @@
   font-size: 18pt;
   color: lightblue;
 }
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 1.5em;
+  margin-right: 150px;
+  border: 4mm ridge rgba(170, 50, 220, .6);
+}
