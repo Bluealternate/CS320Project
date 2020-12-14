@@ -67,12 +67,28 @@ p {
 .faceButtons a{
   color: black;
   float: left;
-  display: inline;
+  display: inline-block;
   margin-right: 18px;
   background-image: url("../Images/dog_face.png");
   width: 225px;
   height: 225px;
-  text-align: left;
+  text-align: center;
+  -webkit-text-fill-color: purple;
+  padding: 20px 25px;
+}
+
+.faceButtons a.pet2 {
+  color: black;
+  float: left;
+  display: inline-block;
+  margin-right: 18px;
+  background-image: url("../Images/cat_face.png");
+  background-repeat: no-repeat;
+  width: 233px;
+  height: 216px;
+  text-align: center;
+  -webkit-text-fill-color: purple;
+  padding: 20px 25px;
 }
 
 .faceButtons a:hover{
