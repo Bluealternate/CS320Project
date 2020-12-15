@@ -1,15 +1,71 @@
-var animal = "dog";
-var name = "Fido";
-var ball;
-var house;
-var randomNames = ["Kevin", "Fido", "Randy", "Alex", "Fluffy", "Princess", "Doug", "Bubbles"];
-var table;
-var cells;
+let animal = '';
+let name = '';
+let ball = '';
+let house = '';
+let randomNames = ["Kevin", "Fido", "Randy", "Alex", "Fluffy", "Princess", "Doug", "Bubbles"];
+let table;
+let cells;
+
+/*
+localStorage.clear();
+*/
+
+/*
+console.log(localStorage.length);
+for(let i = 0; i < localStorage.length; i++){
+  console.log(localStorage.getItem(localStorage.key(i)));
+}
+*/
+
 
 //this code should construct an animal with the desired attributes the user has requested
 function createAnimal(){
-  name = document.getElementById("animalNameTextBox").value;
+  console.log(name+ball+house+animal);
+  let flag = 0;
+  if(ball === '') {
+    document.getElementById("ballMSG").className = "ui pointing red basic label";
+    flag = 1;
+  }
+  else {
+    document.getElementById("ballMSG").className = "hidden ui pointing red basic label";
+  }
 
+  if(house === '') {
+    document.getElementById("houseMSG").className = "ui pointing red basic label";
+    flag = 1;
+  }
+  else {
+    document.getElementById("houseMSG").className = "hidden ui pointing red basic label";
+  }
+
+  if(name === '') {
+    document.getElementById("nameMSG").className = "ui pointing red basic label";
+    flag = 1;
+  }
+  else {
+    document.getElementById("nameMSG").className = "hidden ui pointing red basic label";
+  }
+
+  if(animal === '') {
+    document.getElementById("animalMSG").className = "ui pointing red basic label";
+    flag = 1;
+  }
+  else {
+    document.getElementById("animalMSG").className = "hidden ui pointing red basic label";
+  }
+
+  if(flag === 1) {
+    return;
+  }
+
+  console.log("Creating Animal")
+  let data = [];
+  data.push(animal);
+  data.push(ball);
+  data.push(house);
+
+  localStorage.setItem(name,JSON.stringify(data));
+  window.location.href = "../HTMLFiles/AnimalCreated.html";
 }
 
 //this function should randomly set the name field for the animal to be created
