@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+      .selected {
+          color: red;
+      }
+  </style>
   <meta charset="UTF-8">
   <title>Animal Database</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
@@ -116,7 +121,7 @@
           Pick Your Items
         </h1>
       </center>
-      <table class="ui celled table">
+      <table id="ball_table" class="ui celled table">
         <thead>
         <tr>
           <th class="center aligned" colspan="3">
@@ -146,7 +151,7 @@
         </tbody>
       </table>
 
-      <table class="ui celled table">
+      <table id="house_table" class="ui celled table">
         <thead>
         <tr>
           <th class="center aligned" colspan="3">
