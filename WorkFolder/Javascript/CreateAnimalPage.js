@@ -6,7 +6,7 @@ let randomNames = ["Kevin", "Fido", "Randy", "Alex", "Fluffy", "Princess", "Doug
 let table;
 let cells;
 
-
+console.log(sessionStorage.getItem("user"));
 localStorage.clear();
 
 

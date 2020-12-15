@@ -7,9 +7,11 @@ function checkCredentials() {
   const password = document.getElementById('password').value;
   if (username === 'a' && password === 'a') {
     document.cookie = '1';
+    sessionStorage.setItem("user", "a");
     window.location.href = 'MainPage.html';
   } else if (username === 'b' && password === 'b') {
     document.cookie = '2';
+    sessionStorage.setItem("user", "b");
     window.location.href = 'MainPage.html';
   } else {
     window.location.href = 'LogIn.html';
