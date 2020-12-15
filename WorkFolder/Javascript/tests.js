@@ -1,7 +1,8 @@
 describe('Animal Database Tests', function () {
-  describe('Timeout Test', function () {
-    it('Random test to see if testSuiteworks', function (){
-      this.timeout(50);
+  describe('playWithAnimal Test', function () {
+    it('Level Up Animal when Experience is >= 100, then reset XP to 0, level up is called four times to reach level 1', function (){
+      x = 0;
+      lvl = 1;
     });
   });
 });
