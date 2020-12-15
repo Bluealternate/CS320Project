@@ -10,6 +10,11 @@ class Animal {
     this.feedCount = 0;
     this.rank = 0;
   }
+
+  toString(){
+    let string = this.name + '/' + this.type + '/' + this.description + '/' + this.rank + '$';
+    return string;
+  }
 }
 
 const Cat1 = new Animal('Fluffy', 'Cat', 'A cat that is really fluffy');
