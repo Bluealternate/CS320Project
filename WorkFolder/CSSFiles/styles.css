@@ -109,3 +109,21 @@ p {
   -webkit-text-fill-color: #4CAF50;
   box-shadow: 2px 2px 4px #000000;
 }
+
+.logout {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 70px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.logout:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
