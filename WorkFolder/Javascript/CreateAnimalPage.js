@@ -7,7 +7,7 @@ let table;
 let cells;
 
 //console.log(sessionStorage.getItem("user"));
-//localStorage.clear();
+localStorage.clear();
 
 sessionStorage.setItem("user", "a");
 
@@ -19,7 +19,8 @@ for(let i = 0; i < sessionStorage.length; i++){
 
 //this code should construct an animal with the desired attributes the user has requested
 function createAnimal(){
-  name = document.getElementById("animalNameTextBox").valueOf();
+  name = document.getElementById("animalNameTextBox").value;
+  console.log(name);
   let flag = 0;
   if(ball === '') {
     document.getElementById("ballMSG").className = "ui pointing red basic label";
