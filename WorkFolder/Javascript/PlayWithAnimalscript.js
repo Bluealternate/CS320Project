@@ -39,5 +39,4 @@ function dropThis(i) {
   playSound('../Audiofiles/bark.mp3');
   addXP();
   var data = i.dataTransfer.getData("fed");
-  this.appendChild(document.getElementById(data));
 }
