@@ -7,15 +7,15 @@ let table;
 let cells;
 
 console.log(sessionStorage.getItem("user"));
-localStorage.clear();
+//localStorage.clear();
 
 
-
+/*
 console.log(localStorage.length);
 for(let i = 0; i < localStorage.length; i++){
   console.log(localStorage.getItem(localStorage.key(i)));
 }
-
+*/
 
 
 //this code should construct an animal with the desired attributes the user has requested
