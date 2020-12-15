@@ -7,19 +7,20 @@ let table;
 let cells;
 
 //console.log(sessionStorage.getItem("user"));
-//localStorage.clear();
+localStorage.clear();
 
-//sessionStorage.setItem("user", "a");
+sessionStorage.setItem("user", "a");
 
-/*
-console.log(localStorage.length);
-for(let i = 0; i < localStorage.length; i++){
-  console.log(localStorage.getItem(localStorage.key(i)));
+
+console.log(sessionStorage.length);
+for(let i = 0; i < sessionStorage.length; i++){
+  console.log(sessionStorage.getItem(sessionStorage.key(i)));
 }
-*/
 
 //this code should construct an animal with the desired attributes the user has requested
 function createAnimal(){
+  name = document.getElementById("animalNameTextBox").value;
+  console.log(name);
   let flag = 0;
   if(ball === '') {
     document.getElementById("ballMSG").className = "ui pointing red basic label";
@@ -53,21 +54,23 @@ function createAnimal(){
     document.getElementById("animalMSG").className = "hidden ui pointing red basic label";
   }
 
-  if(localStorage.getItem(name) === null){
+  if(localStorage.getItem(name) === null) {
+    console.log("no entry exists");
+    document.getElementById("nameMSG").className = "hidden ui pointing red basic label";
+  }
+  else {
+    console.log("entry exists");
     document.getElementById("nameMSG").className = "ui pointing red basic label";
     document.getElementById("nameMSG").innerHTML = "name already taken"
     flag = 1;
-  }
-  else {
-    document.getElementById("nameMSG").className = "hidden ui pointing red basic label";
   }
 
   if(flag === 1) {
     return;
   }
 
-  console.log("Creating Animal")
   let data = [];
+  data.push(name);
   data.push(animal);
   data.push(ball);
   data.push(house);
