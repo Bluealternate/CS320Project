@@ -6,9 +6,10 @@ let randomNames = ["Kevin", "Fido", "Randy", "Alex", "Fluffy", "Princess", "Doug
 let table;
 let cells;
 
-console.log(sessionStorage.getItem("user"));
+//console.log(sessionStorage.getItem("user"));
 //localStorage.clear();
 
+//sessionStorage.setItem("user", "a");
 
 /*
 console.log(localStorage.length);
@@ -16,7 +17,6 @@ for(let i = 0; i < localStorage.length; i++){
   console.log(localStorage.getItem(localStorage.key(i)));
 }
 */
-
 
 //this code should construct an animal with the desired attributes the user has requested
 function createAnimal(){
@@ -51,6 +51,15 @@ function createAnimal(){
   }
   else {
     document.getElementById("animalMSG").className = "hidden ui pointing red basic label";
+  }
+
+  if(localStorage.getItem(name) === null){
+    document.getElementById("nameMSG").className = "ui pointing red basic label";
+    document.getElementById("nameMSG").innerHTML = "name already taken"
+    flag = 1;
+  }
+  else {
+    document.getElementById("nameMSG").className = "hidden ui pointing red basic label";
   }
 
   if(flag === 1) {
