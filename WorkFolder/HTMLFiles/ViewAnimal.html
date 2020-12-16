@@ -24,7 +24,32 @@
 
 function search() {
 	const name = document.getElementById('username').value;
-	console.log(animalz[0].name);
+	console.log(name);
+	var ii = 0;
+	var found = 'no';
+	var digit = 0;
+	var imageName = '';
+	var animalImage = document.createElement("img");
+	while (ii < 100){
+		if (name === animalz[ii].name) {
+			digit = ii;
+			found = 'yes';
+		}
+		ii++;
+	}
+	
+	if (found != 'no') {
+		console.log(animalz[digit]);
+		
+		imageName = animalz[digit].type;
+		imageName = ('../Images/FeedAnimalsImages/' + imageName + '1.png');
+		document.work.src = imageName;
+		
+	}
+	
+	else {
+		console.log('that animial does not exist check your spelling');
+	}
 
 }
 
@@ -35,7 +60,7 @@ function search() {
 <div class="banner">
 	<body>
 		
-		<h1>	Search your created animal(s) by name!  </h1>
+		<h1>	Search your created animal by name!  </h1>
 
 	</body>
 
@@ -43,14 +68,24 @@ function search() {
 
 <div class="button">
 
+	<body>
 		<center>
-		<h2>
-		<input type="text" id="username" placeholder="Username">
-		<button class="ui button" id="SearchKey" onclick="search()"> View </button>
-		</h2>
-		</center>
-
+			<h2>
+				<input type="text" id="username" placeholder="Username">
+				<button class="ui button" id="SearchKey" onclick="search()"> View </button>
+				<img name="work" width ="400" height = "400">
+			</h2>
+		</center>	
+	</body>
 </div>
+
+<p></p>
+
+	<h3>
+		<center>
+		Click right to left to view more animals!
+		</center>
+	</h3>
 
 </script>
 

@@ -19,6 +19,16 @@ class Animal {
   }
 }
 
+function build() {
+	var i = 0;
+	const animalHold = new Animal('', '', '');
+	while (i < 100) {
+		animalz[i] = animalHold;
+		i++;
+	}
+}
+
+build();
 const Cat1 = new Animal('Fluffy', 'Cat', 'A cat that is really fluffy');
 animalz[track] = Cat1;
 track++;
