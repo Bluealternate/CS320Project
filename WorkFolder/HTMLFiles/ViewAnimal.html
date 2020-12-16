@@ -25,6 +25,7 @@
 function search() {
 	const name = document.getElementById('username').value;
 	console.log(name);
+	document.work.src = ('../Images/FeedAnimalsImages/' + 'stock'+ '.png');;
 	var ii = 0;
 	var found = 'no';
 	var digit = 0;
@@ -73,7 +74,7 @@ function search() {
 	<body>
 		<center>
 			<h2>
-				<input type="text" id="username" placeholder="Username">
+				<input type="text" id="username" placeholder="Animal name">
 				<button class="ui button" id="SearchKey" onclick="search()"> View </button>
 			</h2>
 		</center>	
