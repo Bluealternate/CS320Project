@@ -22,96 +22,87 @@
 
 <script>
 
-var working = 0;
+let working = 0;
 function search() {
-	const name = document.getElementById('username').value;
-	console.log(name);
-	document.work.src = ('../Images/FeedAnimalsImages/' + 'stock'+ '.png');;
-	var ii = 0;
-	var found = 'no';
-	var digit = 0;
-	var imageName = '';
-	var animalImage = document.createElement("img");
-	while (ii < 100){
-		if (name === animalz[ii].name) {
-			digit = ii;
-			found = 'yes';
-			working = ii;
-		}
-		ii++;
-	}
-	
-	if (found != 'no') {
-		console.log(animalz[digit]);
-		
-		imageName = animalz[digit].type;
-		imageName = ('../Images/FeedAnimalsImages/' + imageName + '1.png');
-		document.work.src = imageName;
-		found = 'no'
-		document.getElementById('fieldB').innerHTML=(animalz[digit].type);
-		document.getElementById('fieldC').innerHTML=(animalz[digit].name);
-		document.getElementById('fieldA').innerHTML=(animalz[digit].description);
-	}
-	
-	else {
-		console.log('that animial does not exist check your spelling');
-		imageName = ('../Images/FeedAnimalsImages/' + 'error'+ '.png');
-		document.work.src = imageName;
-		alert('Check the name & spelling!');
-	}
+  const name = document.getElementById('username').value;
+  console.log(name);
+  document.work.src = ('../Images/FeedAnimalsImages/' + 'stock' + '.png');
+  let ii = 0;
+  let found = 'no';
+  let digit = 0;
+  let imageName = '';
+  const animalImage = document.createElement('img');
+  while (ii < 100) {
+    if (name === animalz[ii].name) {
+      digit = ii;
+      found = 'yes';
+      working = ii;
+    }
+    ii++;
+  }
 
+  if (found != 'no') {
+    console.log(animalz[digit]);
+    imageName = animalz[digit].type;
+    imageName = (`../Images/FeedAnimalsImages/${imageName}1.png`);
+    document.work.src = imageName;
+    found = 'no';
+    document.getElementById('fieldB').innerHTML = (animalz[digit].type);
+    document.getElementById('fieldC').innerHTML = (animalz[digit].name);
+    document.getElementById('fieldA').innerHTML = (animalz[digit].description);
+  } else {
+    console.log('that animial does not exist check your spelling');
+    imageName = ('../Images/FeedAnimalsImages/' + 'error' + '.png');
+    document.work.src = imageName;
+    alert('Check the name & spelling!');
+  }
 }
 
 function like() {
-	const get = document.getElementById('liking').value;
-	alert('You have liked this animal!');
+  const get = document.getElementById('liking').value;
+  alert('You have liked this animal!');
 }
 
 function clickRight() {
-	const get = document.getElementById('right').value;
-	console.log('right');
-	
-	if (working === track-1) {
-		working = -1;
-	}
-	
-	working++;
-	digit = working;
-	console.log(working);
-	document.getElementById('fieldC').innerHTML=(animalz[digit].name);
-	document.getElementById('fieldB').innerHTML=(animalz[digit].type);
-	document.getElementById('fieldA').innerHTML=(animalz[digit].description);
-	imageName = animalz[digit].type;
-	imageName = ('../Images/FeedAnimalsImages/' + imageName + '1.png');
-	document.work.src = imageName;
-	
+  const get = document.getElementById('right').value;
+  console.log('right');
+
+  if (working === track - 1) {
+    working = -1;
+  }
+
+  working++;
+  digit = working;
+  console.log(working);
+  document.getElementById('fieldC').innerHTML = (animalz[digit].name);
+  document.getElementById('fieldB').innerHTML = (animalz[digit].type);
+  document.getElementById('fieldA').innerHTML = (animalz[digit].description);
+  imageName = animalz[digit].type;
+  imageName = (`../Images/FeedAnimalsImages/${imageName}1.png`);
+  document.work.src = imageName;
 }
 
 function clickLeft() {
-	const get = document.getElementById('left').value;
-	console.log('left');
-	
-	if (working === 0) {
-		working = track;
-		digit = working++;
-		console.log(working);	
-	}
-	
-	digit--;
-	working = digit;
-	
-	document.getElementById('fieldC').innerHTML=(animalz[digit].name);
-	document.getElementById('fieldB').innerHTML=(animalz[digit].type);
-	document.getElementById('fieldA').innerHTML=(animalz[digit].description);
-	imageName = animalz[digit].type;
-	imageName = ('../Images/FeedAnimalsImages/' + imageName + '1.png');
-	document.work.src = imageName;
-	
+  const get = document.getElementById('left').value;
+  console.log('left');
+
+  if (working === 0) {
+    working = track;
+    digit = working++;
+    console.log(working);
+  }
+  
+  digit--;
+  working = digit;
+  document.getElementById('fieldC').innerHTML = (animalz[digit].name);
+  document.getElementById('fieldB').innerHTML = (animalz[digit].type);
+  document.getElementById('fieldA').innerHTML = (animalz[digit].description);
+  imageName = animalz[digit].type;
+  imageName = (`../Images/FeedAnimalsImages/${imageName}1.png`);
+  document.work.src = imageName;
 }
 
 </script>
-
-
 <div class="banner">
 	<body >
 		
@@ -192,9 +183,5 @@ function clickLeft() {
 	<style>
 		body {background-color: powderblue;}
 	</style>
-
-</script>
-
-
 </body>
 
