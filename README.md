@@ -10,4 +10,16 @@ Yevgeniy
 Vinh
 
 Project status:
-Finished desing phase and moving into the implementation phase.
+Testing/Completed Phase
+
+To run the animal database use intelliJ to run LogIn.html inside of the app/HTMLFiles. If you try to run the html file with the browser directly it might not display properly for feed animals.
+The credentials to log in to the account is:
+User A
+username: a
+password: a
+
+User B
+username: b
+username: b
+
+Image of the credentials will be posted in the Images folder if needed and the hardcoded credentials can be found in LogIn.js under the app/Javascript folder.
