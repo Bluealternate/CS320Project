@@ -2,6 +2,8 @@
 // https://buzzcoder.gitbooks.io/codecraft-javascript/content/object/iterate-over-a-dictionary.html
 // Feed Animal helper variables
 var feedAnimalHelperName = '';
+var animalz = [100];
+var track = 0;
 class Animal {
   constructor(name, type, description) {
     this.name = name;
@@ -18,13 +20,21 @@ class Animal {
 }
 
 const Cat1 = new Animal('Fluffy', 'Cat', 'A cat that is really fluffy');
+animalz[track] = Cat1;
+track++;
 const Dog1 = new Animal('Woof', 'Dog', 'A dog that says woof');
+animalz[track] = Dog1;
+track++;
 const arrayForUser1 = {};
 arrayForUser1[Cat1.name] = Cat1;
 arrayForUser1[Dog1.name] = Dog1;
 
 const Monkey1 = new Animal('Tail', 'Monkey', 'Eating a banana');
+animalz[track] = Monkey1;
+track++;
 const Giraffe2 = new Animal('LongNeck', 'Giraffe', 'Has a long neck');
+animalz[track] = Giraffe2;
+track++;
 const arrayForUser2 = {};
 arrayForUser2[Monkey1.name] = Monkey1;
 arrayForUser2[Giraffe2.name] = Giraffe2;
