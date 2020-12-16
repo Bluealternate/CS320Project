@@ -67,28 +67,10 @@ function showAnimal() {
   feedAnimalHelperName = cookieSections[1];
   if (cookieSections[0] === '1') {
     const animalType = arrayForUser1[feedAnimalHelperName].type;
-    const currentFeedCount = arrayForUser1[feedAnimalHelperName].feedCount;
-    if (currentFeedCount < 3) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
-    } else if (currentFeedCount >= 3 && currentFeedCount < 6) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
-    } else if (currentFeedCount >= 6 && currentFeedCount < 9) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
-    } else if (currentFeedCount >= 9) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
-    }
+    document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
   } else if (cookieSections[0] === '2') {
     const animalType = arrayForUser2[feedAnimalHelperName].type;
-    const currentFeedCount = arrayForUser2[feedAnimalHelperName].feedCount;
-    if (currentFeedCount < 3) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
-    } else if (currentFeedCount >= 3 && currentFeedCount < 6) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}2.png`;
-    } else if (currentFeedCount >= 6 && currentFeedCount < 9) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}3.png`;
-    } else if (currentFeedCount >= 9) {
-      document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}4.png`;
-    }
+    document.getElementById('AnimalPicture').src = `../Images/FeedAnimalsImages/${animalType}1.png`;
   }
   document.cookie = cookieSections[0];
 }
