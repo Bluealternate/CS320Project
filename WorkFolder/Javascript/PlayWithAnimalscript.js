@@ -20,7 +20,7 @@ function addXP() {
     x = 0;
     width=0;
     z++;
-    stat.innerHTML = 'Bessie Leveled Up! Lv. ' + z;
+    stat.innerHTML = 'Woof Leveled Up! Lv. ' + z;
     elem.style.width = width + '%';
     elem.innerHTML = width + '%';
   } else {

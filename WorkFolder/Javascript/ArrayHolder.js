@@ -1,9 +1,9 @@
 // Javascript file to contain our files
 // https://buzzcoder.gitbooks.io/codecraft-javascript/content/object/iterate-over-a-dictionary.html
 // Feed Animal helper variables
-var feedAnimalHelperName = '';
-var animalz = [100];
-var track = 0;
+let feedAnimalHelperName = '';
+const animalz = [100];
+let track = 0;
 class Animal {
   constructor(name, type, description) {
     this.name = name;
@@ -13,19 +13,19 @@ class Animal {
     this.rank = 0;
   }
 
-  toString(){
-    let string = this.name + '/' + this.type + '/' + this.description + '/' + this.rank + '$';
+  toString() {
+    const string = `${this.name}/${this.type}/${this.description}/${this.rank}$`;
     return string;
   }
 }
 
 function build() {
-	var i = 0;
-	const animalHold = new Animal('', '', '');
-	while (i < 100) {
-		animalz[i] = animalHold;
-		i++;
-	}
+  let i = 0;
+  const animalHold = new Animal('', '', '');
+  while (i < 100) {
+    animalz[i] = animalHold;
+    i++;
+  }
 }
 
 build();
@@ -52,13 +52,12 @@ arrayForUser2[Giraffe2.name] = Giraffe2;
 function ListAnimalForFeedAnimal() { // Normally use for loop and clean the code up more.
   let numberTracker = 1;
   if (document.cookie === '1') {
-    for (let animals in arrayForUser1) {
+    for (const animals in arrayForUser1) {
       document.getElementById(numberTracker.toString()).innerHTML = arrayForUser1[animals].name;
       numberTracker += 1;
     }
-
   } else if (document.cookie === '2') {
-    for (let animals in arrayForUser2) {
+    for (const animals in arrayForUser2) {
       document.getElementById(numberTracker.toString()).innerHTML = arrayForUser2[animals].name;
       numberTracker += 1;
     }
@@ -73,7 +72,7 @@ function goToLink(idValue) {
 }
 
 function showAnimal() {
-  var cookieSections = document.cookie.split(' ');
+  const cookieSections = document.cookie.split(' ');
   feedAnimalHelperName = cookieSections[1];
   if (cookieSections[0] === '1') {
     const animalType = arrayForUser1[feedAnimalHelperName].type;
