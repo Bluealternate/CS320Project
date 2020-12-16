@@ -49,6 +49,7 @@ function search() {
 		document.work.src = imageName;
 		found = 'no'
 		document.getElementById('fieldB').innerHTML=(animalz[digit].type);
+		document.getElementById('fieldC').innerHTML=(animalz[digit].name);
 		document.getElementById('fieldA').innerHTML=(animalz[digit].description);
 	}
 	
@@ -77,6 +78,7 @@ function clickRight() {
 	working++;
 	digit = working;
 	console.log(working);
+	document.getElementById('fieldC').innerHTML=(animalz[digit].name);
 	document.getElementById('fieldB').innerHTML=(animalz[digit].type);
 	document.getElementById('fieldA').innerHTML=(animalz[digit].description);
 	imageName = animalz[digit].type;
@@ -98,6 +100,7 @@ function clickLeft() {
 	digit--;
 	working = digit;
 	
+	document.getElementById('fieldC').innerHTML=(animalz[digit].name);
 	document.getElementById('fieldB').innerHTML=(animalz[digit].type);
 	document.getElementById('fieldA').innerHTML=(animalz[digit].description);
 	imageName = animalz[digit].type;
@@ -110,7 +113,7 @@ function clickLeft() {
 
 
 <div class="banner">
-	<body>
+	<body >
 		
 		<h1 style="text-align:center;">	Search your created animal by name!  </h1>
 
@@ -138,6 +141,7 @@ function clickLeft() {
 						background-color: red;
 					}
 					</style>
+					
 				</center>
 			</h2>	
 		</center>	
@@ -149,7 +153,7 @@ function clickLeft() {
 
 	<h3>
 		<center>
-
+			<p id="fieldC" > Name: </p>
 			<img name="work" style="float:center;" align="center" width ="500" height = "400">
 			<span vertical-align="middle" id="fieldA" >Description.</span>
 			<p id="fieldB" > Animal </p>
@@ -184,11 +188,13 @@ function clickLeft() {
 		</style>
 	
 	</h5>
+	
+	<style>
+		body {background-color: powderblue;}
+	</style>
 
 </script>
 
 
 </body>
-
-
 
