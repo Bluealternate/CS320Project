@@ -9,6 +9,7 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="../Javascript/ArrayHolder.js"></script>
+  <script src="../Javascript/ArrayHolder.js"></script>
 </head>
 
 <body>
@@ -22,11 +23,33 @@
 
 <script>
 
+function search() {
+  const name = document.getElementById('username').value;
+	console.log(animalz[0].name);
+}
 
-
-
-console.log(document);
 </script>
+
+
+<div class="banner">
+	<body>
+		
+		<h1>	Search your created animal(s) by name!  </h1>
+
+	</body>
+
+</div>
+
+<div class="button">
+
+		<center>
+		<h2>
+		<input type="text" id="username" placeholder="Username">
+		<button class="ui button" id="SearchKey" onclick="search()"> View </button>
+		</h2>
+		</center>
+
+</div>
 
 
 </body>
