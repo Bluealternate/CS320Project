@@ -29,6 +29,10 @@
   float: left;
 }
 
+.bottom-left{
+  font-size: 17pt;
+}
+
 .left {
   width: 40%;
 }
