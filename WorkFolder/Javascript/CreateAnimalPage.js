@@ -7,7 +7,7 @@ let table;
 let cells;
 
 //console.log(sessionStorage.getItem("user"));
-localStorage.clear();
+//localStorage.clear();
 
 sessionStorage.setItem("user", "a");
 
@@ -15,6 +15,13 @@ sessionStorage.setItem("user", "a");
 console.log(sessionStorage.length);
 for(let i = 0; i < sessionStorage.length; i++){
   console.log(sessionStorage.getItem(sessionStorage.key(i)));
+  let temp = sessionStorage.getItem(sessionStorage.key(i));
+  temp = JSON.parse(temp);
+  console.log(temp[0]);
+  console.log(temp[1]);
+  console.log(temp[2]);
+  console.log(temp[3]);
+  console.log(temp[4]);
 }
 
 //this code should construct an animal with the desired attributes the user has requested
