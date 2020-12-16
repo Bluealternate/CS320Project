@@ -44,11 +44,13 @@ function search() {
 		imageName = animalz[digit].type;
 		imageName = ('../Images/FeedAnimalsImages/' + imageName + '1.png');
 		document.work.src = imageName;
-		
+		found = 'no'
 	}
 	
 	else {
 		console.log('that animial does not exist check your spelling');
+		imageName = ('../Images/FeedAnimalsImages/' + 'error'+ '.png');
+		document.work.src = imageName;
 	}
 
 }
@@ -73,7 +75,6 @@ function search() {
 			<h2>
 				<input type="text" id="username" placeholder="Username">
 				<button class="ui button" id="SearchKey" onclick="search()"> View </button>
-				<img name="work" width ="400" height = "400">
 			</h2>
 		</center>	
 	</body>
@@ -83,9 +84,15 @@ function search() {
 
 	<h3>
 		<center>
-		Click right to left to view more animals!
+		<img name="work" width ="500" height = "400">
 		</center>
 	</h3>
+	
+	<h4>
+		<center>
+			Click right to left to view more animals!
+		</center>
+	</h4>
 
 </script>
 
