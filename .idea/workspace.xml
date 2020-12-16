@@ -26,9 +26,16 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+>>>>>>> Stashed changes
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../primefunctions" />
+>>>>>>> 374a551cd5940f8c61adc08f23be9812754d7754
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -76,21 +83,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608059616614" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1608061724593">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1608062258537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608061724593" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1608061724593">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608062258537" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1608062258537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608061724593" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1608061724593">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608062258537" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1608062258537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608061724593" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1608061724593">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608062258537" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1608062258537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608061724593" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608062258537" />
   </component>
 </project>

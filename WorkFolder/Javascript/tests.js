@@ -5,4 +5,9 @@ describe('Animal Database Tests', function () {
       lvl = 1;
     });
   });
+  describe('Main Page runtime Test', function () {
+    it('Main page should run within 10 ms', function (){
+      return "You good bro";
+    });
+  });
 });
