@@ -5,6 +5,9 @@
 function checkCredentials() {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
+
+  sessionStorage.clear();
+
   if (username === 'a' && password === 'a') {
     document.cookie = '1';
     sessionStorage.setItem("user", "a");
