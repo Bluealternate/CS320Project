@@ -15,13 +15,13 @@ function checkCredentials() {
 
   if (username === 'a' && password === 'a') { // If user A set the cookie to 1 and go to the main page
     document.cookie = '1';
-    sessionStorage.setItem("user", "a");
-    loadAnimals("a");
+    sessionStorage.setItem('user', 'a');
+    loadAnimals('a');
     window.location.href = 'MainPage.html';
   } else if (username === 'b' && password === 'b') { // If user B set the cookie to 2 and go to the main page
     document.cookie = '2';
-    sessionStorage.setItem("user", "b");
-    loadAnimals("b");
+    sessionStorage.setItem('user', 'b');
+    loadAnimals('b');
     window.location.href = 'MainPage.html';
   } else { // Else reload the page because the credentials are wrong.
     window.location.href = 'LogIn.html';
@@ -34,10 +34,11 @@ function loadAnimals(user) {
     return;
   }
 
-  for(let i = 0; i < localStorage.length; i++){
-    if((JSON.parse(localStorage.getItem(localStorage.key(i)))[4]) === user){
-      console.log("loading into temporary memory");
-      sessionStorage.setItem(JSON.parse(localStorage.getItem(localStorage.key(i)))[0] ,localStorage.getItem(localStorage.key(i)));
+  for (let i = 0; i < localStorage.length; i++){
+    if ((JSON.parse(localStorage.getItem(localStorage.key(i)))[4]) === user) {
+      console.log('loading into temporary memory');
+      sessionStorage.setItem(JSON.parse(localStorage.getItem(localStorage.key(i)))[0],
+        localStorage.getItem(localStorage.key(i)));
     }
   }
 
