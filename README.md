@@ -23,3 +23,6 @@ username: b
 username: b
 
 Image of the credentials will be posted in the Images folder if needed and the hardcoded credentials can be found in LogIn.js under the app/Javascript folder.
+
+If you want to use the View animal page the animals name are (capitalization matters):
+Fluffy, Woof, Tail, LongNeck
